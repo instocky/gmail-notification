@@ -1,0 +1,49 @@
+# --- Google Apps Script / clasp ------------------------------------------
+# .clasp.json по умолчанию содержит только scriptId + rootDir и безопасен
+# для коммита, но если вы когда-либо сохраняли туда токены/oauth — оставьте
+# его в игноре и держите локально.
+.clasp.json
+
+# Локальные переопределения clasp
+.clasprc.json
+
+# --- Секреты ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials/
+secrets/
+script.properties.json
+
+# --- Node / clasp (если используется через npm) --------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# --- IDE / редакторы ----------------------------------------------------
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+*.swp
+*.swo
+*~
+.DS_Store
+
+# --- OS -----------------------------------------------------------------
+Thumbs.db
+Desktop.ini
+
+# --- Прочее -------------------------------------------------------------
+*.log
+*.bak
+*.tmp
+coverage/
+dist/
+build/
